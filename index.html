@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar App</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/calendar.css">
+	</head>
+	<body>
+		<section>
+			<div class="row justify-content-center m-5">
+				<div class="col-md-6">
+					<h3 id="title" class="text-center"></h3>
+					<div id="calendar" class="mt-5">
+						<div class="day">Sun</div>
+						<div class="day">Mon</div>
+						<div class="day">Tue</div>
+						<div class="day">Wed</div>
+						<div class="day">Thur</div>
+						<div class="day">Fri</div>
+						<div class="day">Sat</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header d-flex align-items-center">
+							<h6 id="info-card-title" class="m-0 card-title" style="flex: 1;">Select a date</h6>
+							<button class="btn btn-success" id="add-appointment" disabled>+</button>
+							<button class="btn btn-danger ml-2" style="display: none;" id="clear-appointment">Clear</button>
+							<button class="btn btn-secondary ml-2" style="display: none;" id="edit-appointment">Edit</button>
+						</div>
+						<div id="info-card-body" class="card-body"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script src="js/calendar.js"></script>
+	</body>
+</html>
